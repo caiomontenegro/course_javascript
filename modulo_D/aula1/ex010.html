@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+    <style>
+        body {
+            background-color: rgb(98, 0, 255);
+            color: greenyellow;
+            font: normal 20pt arial;
+        }
+    </style>
+<body>
+    <h1>Radar de Velocidade</h1>
+    Velocidade do carro 
+    <input type="number" id="txtvel"> km/h
+
+    <div>
+        <input type="button" value="Fiscalizar" onclick="calcular()"
+    </div>
+
+    <div id="res">
+
+    </div>
+    
+    <script>
+        function calcular() {
+            let txtv = document.getElementById('txtvel')
+            let res = document.querySelector('div#res')
+            let vel = Number(txtv.value)
+            let limite = 50
+            res.innerHTML = `<p>Sua velocidade atual é <strong>${vel}km/h</strong><p>`
+            if (vel > limite) {
+                res.innerHTML += `Você está acima do limite de velocidade permitido de ${limite}.<strong> Multado!</strong>`
+                res.innerHTML += `<p> Dirija sempre com segurança! </p>`
+            } else {
+                res.innerHTML += `<p> Dirija sempre com segurança! </p>`
+            }
+        }
+    </script>
+    
+</body>
+</html>

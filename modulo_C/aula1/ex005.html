@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Exercise</title>
+    <style>
+        body {
+            background-color: blueviolet;
+            color: greenyellow;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <strong>Class of DOM</strong>
+    </h1>
+    <p>Here is the result</p>
+    <p>Learn to use <strong>DOM </strong>on Javascript</p>
+    <div id="msg">Click here</div>
+    <script>
+        // let b = window.document.body
+        // let p1 = window.document.getElementsByTagName('p')[0]
+        // let d = window.document.getElementById('msg')
+        var d = window.document.querySelector('div#msg')
+        d.style.color= 'blue'
+    </script>
+</body>
+</html>

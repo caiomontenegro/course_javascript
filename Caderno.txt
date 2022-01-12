@@ -1,0 +1,450 @@
+##############################################################################
+
+                                  MÓDULO A
+
+##############################################################################
+
+================================  AULA 01  ===================================
+
+Tag para estilização:
+
+<style>  </style>
+
+Tag para js:
+
+<script>   </script>
+
+
+Comandos úteis:
+
+windows.alert('')   Apresenta um popup com alerta
+window.confirm('')  Apersenta um popup com botão de confirm
+window.prompt('')   Apresenta um popup com um campo imput
+
+
+
+##############################################################################
+
+                                  MÓDULO B
+
+##############################################################################
+
+================================  AULA 01  ===================================
+
+
+
+Sinal de "=" se le como "recebe/receive"
+
+O nome das váriaveis é "Identificador". Ex:
+
+const name = "Caio"
+
+Identificador: name
+
+comando typeof 'var' demonstrará o tipo da variável
+
+
+
+================================  AULA 02  ===================================
+
+
+
+Guardadndo variáveis para serem utilizadas em métodos:
+
+É possível armazenar dados do comando prompt e reproduzir a variável em outros comandos.
+Ex:
+
+Criar um prompt para armazenar o nome de uma pessoa:
+
+let name = prompt('What's your name')
+
+Reproduzir a variável nome através do comando alert:
+
+alert(name)
+
+
+
+
+Tratando dados:
+
+Transformando strings em números inteiros:
+
+Number.parseInt(number)   /   parseInt(number)
+Number.paserFloat(number)    /   parseFloat(number)
+
+A função mais recente, que consegue entregar sozinha a soma exata é:
+
+Number(n)
+
+Transformando números para strings:
+
+String(number)  /  number.toString()
+
+
+
+
+Concatenação com template String:
+
+Utlize ${var}, para colocar variáveis dentro da string sem a necessidade de "+"
+
+
+Métodos extras:
+
+documente.write('') Escreve uma mensagem no documento HTML
+.replace('', '') Troca um carácter por outro
+
+.tolacaleString() Faz uma formatação especial para o local do mundo indicado  ex:
+
+number = 2.45687
+number.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL})
+R$ 2,49
+
+
+================================  AULA 03  ===================================
+
+
+Operadores:
+
+Ordem de precedência dos operadores:
+
+()
+**
+* / %
++ -
+
+Sintaxes sugars:
+
+var n = 3
+
+n = n + 4     n += 4
+n = n - 4     n -= 4
+n = n * 4     n *= 4
+n = n / 4     n /= 4
+n = n ** 4    n **= 4
+n = n % 4     n %= 4
+
+Operador de pós incremento
+
+n = n + 1    n++    
+n = n - 1    n--
+
+Operador de pŕe incremento
+
+n = n + 1    ++n     
+n = n - 1    --n 
+
+
+================================  AULA 04  ===================================
+
+
+Operadores lógicos:
+
+
+! = negação / not
+&& = conjunção / and
+|| = or
+
+
+
+
+
+Operador Ternários
+
+
+? questiona se a condição imposta é verdadeira ou falsa
+
+: se coloca entre as intruções que seram executadas de acordo com
+a resposta
+
+ex:
+
+     este         ?       true        :         false
+
+
+media >= 7.0      ?     "Aprovado"    :      "Reprovado"
+
+
+
+##############################################################################
+
+                                  MÓDULO C
+
+##############################################################################
+
+================================  AULA 01  ===================================
+
+O que é DOM?
+
+Document object model é um conjunto de objetos dentro do navegador, que
+da acesso aos componentes do website.
+
+
+Árvore DOM
+
+             window
+
+Location    Document    history
+
+              HTML
+
+        Head        Body
+   
+    meta  title         
+
+               h1   p   p   div 
+
+                    Strong
+
+
+Selecionando componentes da árvore:
+
+- Marca
+- ID
+- Nome
+- Classe 
+- Seletor
+
+Marca:
+Para utilizar algum dado no DOM, basta informar o caminho como está na 
+árvore. Para facilitar, comece digitando a partir da raíz (window)
+
+Ex:
+
+let p1 = window.document.getElementsByTagName('tag')[0]
+
+
+ID:
+Crie um ID na tag selecionada, e utilize a mesma lógica seleção por marca. 
+
+Ex:
+
+let p1 = window.document.getElementById('ID')[0]
+
+
+Seletor:
+
+Ao utlizar seletores, usamos o método window.document.querySelector('div#msg')
+
+onde "DIV", representa a tag Div e msg representa o iD, em caso de Class, se ulitiza
+o "." ao invés de "#".
+
+
+
+================================  AULA 02  ===================================
+
+
+Eventos
+
+-mouseenter (quando o mouse entrar dentro da div)
+-mousemove  (Quando o mouse se move dentro da div)
+-mousedown  (Quando o botão esquerdo do mouse fica pressionando dentro da div)
+-mouseup    (Quando o botão esquerdo o mouse é solto dentro do click)
+-mouseclick (Quando ocorre um click do mouse dentro da div)
+-mouseout   (Quando o mouse sai da div)
+
+Para mais eventos pesquisar por Javascript DOM events lists
+
+Ex:
+
+1- Como boa prática, faça a seleção fora da function:
+
+let text = document.querySelector('div#texto')
+
+2- Crie os eventos desejados:
+
+text.addEventListener('click', clicar())
+
+3- Complete criando a funçao:
+
+function cliclar() {
+    id.innerText = 'novo texto'
+}
+
+Obs: A função deve ter nome de uma ação. Ex: Calcular, Somar, Dividir, etc.
+
+
+
+##############################################################################
+
+                                  MÓDULO D
+
+##############################################################################
+
+================================  AULA 01  ===================================
+
+Condições:
+
+Condição Simples:
+Apenas apresenta uma condição.
+
+Condição Composta:
+Apresenta duas condições, onde a segunda é executada caso não 
+atenda a primeira condição
+
+Condição em Aninhadas:
+Apresenta mais de 2 condições.
+
+Condição Multipla:
+Em cada condição de case, deve ser colado um BREAK no final
+
+
+
+##############################################################################
+
+                                  MÓDULO E
+
+##############################################################################
+
+================================  AULA 01 / 02 ===============================
+
+
+Repetições
+
+- While
+
+    É a estrutra de repetição mais simples. Nela é imposta uma condição, 
+    onde enquanto essa condição for verdadeira, o loop acontecerá.
+
+    Sintaxe:
+
+    while (x > 1) {
+        console.log('X ainda é maior que 1')
+    }
+
+- Do While
+
+    Muito semelhante a estrutura While, porém neste caso a condição vaí ao 
+    final do bloco de execução. Sendo assim, independente se a condição for
+    True ou False, o bloco será executado pelo menos uma vez.
+
+    Sintaxe:
+
+    do {
+        console.log('Olá mundo')
+    } while (x < 1)
+
+    WHile deve ser utilizado quando não sabe quando repetição deve ser 
+    finalizada.
+
+- For
+
+    Estrutura de repetição com variável de controle. Ao contrário do While, 
+    o FOr, possui três parâmetros em em seu método: Início, Teste e Incremento
+    
+    Sintaxe:
+
+    for (x = 1; x < 10; x++) {
+        console.log('x ainda é menor que 10')
+    }
+
+    O FOR deve ser usado sempre quando se sabe qual o final desejado para
+    encerrar o loop
+
+
+##############################################################################
+
+                                  MÓDULO F
+
+##############################################################################
+
+================================  AULA 15  ===================================
+
+
+- Variáveis Compostas
+
+    Ao contrário das Variáveis simples que só guardam um valor por vez, 
+    uma variável composta pode guardar mais de um valor em uma mesma estrutura
+
+    A- Vetores/Arrays:
+        Vetor ou array é uma variável composta que simpbolista uma lista de dados
+        onde cada dado recebe uma chave de identificação, se iniciando pelo zero.
+
+        Ex:
+        let nums = [1, 3, 5, 2]
+
+        Acima vemos um array com nome "nums", onde armazena 4 números, onde cada
+        um recebe uma chave númerica, se iniciando pelo número zero, partindo da
+        esquerda para a direnta. Logo:
+
+        1 = 0
+        3 = 1
+        5 = 2
+        4 = 3
+
+        Para adcionar um valor manualmente em uma chave, basta digitar:
+
+        nums[4] = 7
+
+        No caso acima, seria criada uma chave 4 que recebera o número 7. Mas 
+        caso a chave já exista, o valor será substituído.
+
+        Para adcionar automaticamente um valor na lista, criando para si uma nova
+        chave, basta usar o metódo push:
+
+        num.push(7)
+
+        No metodo push acima, será criada uma chave nova na ultima posição, 
+        recebendo o valor 7
+
+        Para saber o cumprimento do do array, basta usar o atributo length:
+
+        nums.lenght
+
+        Para organizar os valor em ordem crescente ou alfabética, utilize o 
+        metodo sort:
+
+        num.sort()
+
+        Para imprimir todos os valores de uma array automaticamente, podemos
+        usar o método FOR:
+
+        for(c = 0; c < nums.lenght; c++) {
+            console.log(`A posição ${c}, tem o valor ${nums[c]}`)
+        }
+
+        Também é possível usar o metodo FOR IN, mais utilizado em casos de 
+        variáveis compostas:
+
+        for(let c in num) {
+            console.log(`A posição ${c}, tem o valor ${nums[c]}`)
+        }
+
+        Para buscar valorres dentro do vetor, podemos usar o metodo indexOf():
+        (Se True:retornará a chave do valor buscado)
+        (Se Falase: retorná a chave -1)
+
+        nums.indexOf(7)
+
+================================== Aula 16 ===================================
+
+- Funções
+
+    Funções, como o próprio nome diz, são funções que podemos programar para
+    o nosso sistema realizar. Toda função possui as seguintes caracteristicas:
+
+    A - Chamada: 
+        O comando que executa a função. (Botão, comando, ação, evento, etc)
+
+    B - Ação:
+        Ação na qual a função realizará.
+    
+    C - Parâmetros:
+        Dados dinâmicos que podem ser imputados para na chamada, para serem
+        utilizados na ação.
+
+    D - Retorno:
+        O que a função retornará, pode ser uma nova função, ação ou um dado.
+
+    
+    Ex:
+
+    function ação (parâmetro) {
+        res = parâmetro + 3
+        return res
+    }
+    ação(5)
+
+    A > ação()
+    B > parâmetro + 3
+    C > 5
+    D > res

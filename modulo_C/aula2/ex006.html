@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body {
+            background-color: rgb(115, 47, 179);
+            color: greenyellow;
+            font: normal 20pt arial;
+        }
+        div#area {
+            background-color: greenyellow;
+            color: rgb(107, 38, 156);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align:  center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interact.
+    </div>
+
+    <script>
+        let text = window.document.querySelector('div#area')
+        text.addEventListener('click', clickar)
+        text.addEventListener('mouseenter', enter)
+        text.addEventListener('mouseout', out)
+
+        function clickar() {
+            text.innerText = "Gorda"
+        }
+        function enter() {
+            text.innerHTML = "@_@"
+        }
+        function out() {
+            text.innerHTML = "Interact."
+        }
+    </script>
+</body>
+</html>

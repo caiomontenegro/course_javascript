@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjamin Age</title>
+    <link rel="stylesheet" href="modelo.css">
+</head>
+<body>
+    <header>
+        <h1>Benjamin Button age checker .</h1>
+    </header>
+    <section>
+        <p>Enter age:
+            <input type="number" name="age" id="age" min="0" max="100">
+        </p>
+        <p>Select the sex:
+            <input type="radio" name="radsex" id="mas" checked>
+            <label for="mas">Masculine</label>
+            <input type="radio" name="radsex" id="fem">
+            <lavel for="fem">Feminine</lavel>
+        </p>
+        <p>
+            <input type="button" value="Check" onclick="check()">
+        </p>
+        <p id="result">
+            Fill in the above data.
+        </p>
+    </section>
+    <footer>
+        <p>&copy;Caio Montenegro</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
